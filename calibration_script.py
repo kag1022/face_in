@@ -6,13 +6,16 @@ import os
 import csv
 from tqdm import tqdm
 
+# MediaPipe Tasks API設定
+from mediapipe.tasks import python
+from mediapipe.tasks.python import vision
+
 # --- 設定 ---
 DATASET_ROOT = "./dataset"  # 画像フォルダのルート
 OUTPUT_CSV = "face_standards.csv"
 
 # MediaPipe Tasks API設定
-from mediapipe.tasks import python
-from mediapipe.tasks.python import vision
+
 
 # モデルファイルのパス (同じディレクトリにある前提)
 MODEL_PATH = "./face_landmarker.task"

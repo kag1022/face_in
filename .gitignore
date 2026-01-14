@@ -7,6 +7,15 @@ venv/
 env/
 .env
 
+# Data & Images
+dataset/
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.csv # Assuming the standard csv is also generated and shouldn't be tracked? User said "file and dataset", context implies raw data. I'll keep generated csv tracked unless specified, but user said "dataset". I will stick to dataset folder and images relative to root if any.
+face_landmarker.task
+
 # Node
 node_modules/
 npm-debug.log
